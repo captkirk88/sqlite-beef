@@ -665,7 +665,7 @@ static
 		public float float;
 		public c_char* string;
 		//NULL
-		public blob blob;
+		public void* blob;
 	}
 	[CRepr]
 	public struct context;
