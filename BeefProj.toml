@@ -4,6 +4,7 @@ FileVersion = 1
 Name = "Sqlite-Beef"
 TargetType = "BeefLib"
 StartupObject = "Sqlite_Beef.Program"
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/deps/*.dll\")"]
 
 [Configs.Debug.Win32]
 LibPaths = ["$(ProjectDir)/deps/win_sqlite3.lib"]
