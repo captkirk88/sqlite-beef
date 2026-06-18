@@ -4,4 +4,6 @@ FileVersion = 1
 Name = "Sqlite-Beef"
 TargetType = "BeefLib"
 StartupObject = "Sqlite_Beef.Program"
+
+[Configs.Release.Win64]
 PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/deps/*.dll\")"]
